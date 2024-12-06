@@ -44,7 +44,7 @@ class pilha_sequencial:
         if self.__dados[self.__topo] != None:
             return self.__dados[self.__topo]
         else:
-            return 'a pilha já está vazia'
+            print('a pilha já está vazia')
 
     def busca_elemento(self, num:int):
         try:
@@ -52,7 +52,7 @@ class pilha_sequencial:
                 return self.__dados[num]
             return 'elemento não encontrado'
         except IndexError:
-            return 'valor fora do range'
+            print('valor fora do range')
     
     def busca_posicao(self,elemento:any):
         cont = -1
@@ -63,10 +63,3 @@ class pilha_sequencial:
             if i == None:
                 break
         return 'elemento não encontrado'
-    
-
-
-        
-    
-
-
